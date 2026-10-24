@@ -16,7 +16,8 @@ Lens & Light is a student photography club for anyone who enjoys capturing the w
 (add later)
 
 ## Screenshot
-(add later)
+
+![Home page of Lens & Light Photography Society](images/home-screenshot.png)
 
 ## Live site
 https://beenishkashifpk-cloud.github.io/cit331-assignment1-0020/
