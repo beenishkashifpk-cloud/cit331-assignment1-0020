@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lens & Light Photography Society | Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Lens & Light Photography Society</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+    <section>
+      <h2>Register for an Event</h2>
+      <form id="register-form">
+
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g. Ayesha Khan" required minlength="3">
+
+        <label for="email">University email</label>
+        <input type="email" id="email" name="email" placeholder="you@university.edu" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="03001234567" pattern="[0-9]{11}" required>
+
+        <label for="event">Event</label>
+        <select id="event" name="event" required>
+          <option value="">Choose an event</option>
+          <option value="Golden Hour Photo Walk">Golden Hour Photo Walk</option>
+          <option value="Smartphone Photography Workshop">Smartphone Photography Workshop</option>
+          <option value="Portrait Lighting Masterclass">Portrait Lighting Masterclass</option>
+          <option value="Annual Photo Exhibition">Annual Photo Exhibition</option>
+        </select>
+
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <input type="radio" id="src-friend" name="source" value="Friend" required>
+          <label for="src-friend">Friend</label>
+          <input type="radio" id="src-social" name="source" value="Social media">
+          <label for="src-social">Social media</label>
+          <input type="radio" id="src-poster" name="source" value="Poster">
+          <label for="src-poster">Poster</label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="message"></p>
+    </section>
+        <section>
+      <h2>Saved Registrations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Event</th>
+            <th>Heard via</th>
+          </tr>
+        </thead>
+        <tbody id="saved-body"></tbody>
+      </table>
+      <button type="button" id="clear-btn">Clear all</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lens & Light Photography Society</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
