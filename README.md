@@ -1,5 +1,5 @@
-# cit331-assignment1--0020
-
+# cit331-assignment1-0020
+cit331-assignment1-0020.vercel.app
 CIT331 Assignment 1
 
 # Lens & Light Photography Society
@@ -31,3 +31,4 @@ Lens & Light is a student photography club for anyone who enjoys capturing the w
 ## Live site
 
 https://beenishkashifpk-cloud.github.io/cit331-assignment1-0020/
+cit331-assignment1-0020.vercel.app
