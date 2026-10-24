@@ -20,7 +20,9 @@ body {
   background: var(--bg);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.3;
 }
