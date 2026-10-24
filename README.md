@@ -11,9 +11,11 @@ Lens & Light is a student photography club for anyone who enjoys capturing the w
 
 ## Image Sources
 - images/photo-walk.jpg: Photo by Britt Weckx on Unsplash (https://unsplash.com/@weckxke), used on the Events page. Free to use under the Unsplash License.
-
-## How to open locally
-(add later)
+**
+## How to open locally**
+1. Download or clone this repository.
+2. Open the folder and double-click `index.html`.
+3. The site opens in your browser. Use the menu to visit the other pages.
 
 ## Screenshot
 
