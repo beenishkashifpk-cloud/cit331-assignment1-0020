@@ -1,12 +1,16 @@
+// Get the page elements
 const form = document.getElementById("register-form");
 const message = document.getElementById("message");
 const tableBody = document.getElementById("saved-body");
 const clearBtn = document.getElementById("clear-btn");
 
+// Read saved registrations from localStorage (empty list if none)
 function getRegistrations() {
   const saved = localStorage.getItem("registrations");
   return saved ? JSON.parse(saved) : [];
 }
+
+// Show all saved registrations in the table
 function showRegistrations() {
   const list = getRegistrations();
   tableBody.textContent = "";
@@ -21,6 +25,8 @@ function showRegistrations() {
     tableBody.appendChild(row);
   });
 }
+
+// Save a new registration when the form is submitted
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -40,10 +46,13 @@ form.addEventListener("submit", function (event) {
   form.reset();
   showRegistrations();
 });
+
+// Remove all saved registrations
 clearBtn.addEventListener("click", function () {
   localStorage.removeItem("registrations");
   message.textContent = "All registrations cleared.";
   showRegistrations();
 });
 
+// Show saved registrations when the page opens
 showRegistrations();
