@@ -1,3 +1,4 @@
+/* ===== Colour palette ===== */
 :root {
   --navy: #0b1f3a;
   --accent: #b45309;
@@ -5,6 +6,7 @@
   --text: #222222;
 }
 
+/* ===== Base styles ===== */
 * {
   box-sizing: border-box;
 }
@@ -28,6 +30,7 @@ img {
   height: auto;
 }
 
+/* ===== Links and keyboard focus ===== */
 a {
   color: #1e56d6;
 }
@@ -45,8 +48,9 @@ input:focus,
 select:focus,
 button:focus {
   outline: 3px solid var(--accent);
-  outline-offset: 2px;
 }
+
+/* ===== Header and navigation ===== */
 header {
   display: flex;
   flex-direction: column;
@@ -88,6 +92,7 @@ nav a.active {
   background: var(--accent);
 }
 
+/* ===== Main content, sections and aside ===== */
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -104,6 +109,7 @@ aside {
   background: white;
 }
 
+/* ===== Footer ===== */
 footer {
   padding: 16px;
   text-align: center;
@@ -120,16 +126,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-}
+/* ===== Event cards ===== */
 .events {
   display: flex;
   flex-wrap: wrap;
@@ -153,6 +150,7 @@ footer a:hover {
   margin-top: 0;
 }
 
+/* ===== Registration form ===== */
 form {
   display: flex;
   flex-direction: column;
@@ -187,7 +185,6 @@ button {
   background: var(--navy);
   color: white;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 button:hover {
@@ -199,7 +196,12 @@ button:hover {
   color: #166534;
 }
 
-table {s
+/* ===== Saved registrations table ===== */
+.saved {
+  overflow: auto;
+}
+
+table {
   width: 100%;
   border-collapse: collapse;
   background: white;
@@ -214,4 +216,16 @@ td {
 
 tr:nth-child(even) {
   background: #f2f2f2;
+}
+
+/* ===== Tablets and larger screens ===== */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
 }
