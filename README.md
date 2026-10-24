@@ -26,6 +26,7 @@ Lens & Light is a student photography club for anyone who enjoys capturing the w
 ## Screenshot
 
 ![Home page of Lens & Light Photography Society](images/home-screenshot.png)
+<img width="1294" height="646" alt="image" src="https://github.com/user-attachments/assets/54edcbe5-d9c8-49b8-91f8-816070b9f2b3" />
 
 ## Live site
 
